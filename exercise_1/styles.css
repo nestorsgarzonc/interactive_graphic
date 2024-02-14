@@ -1,0 +1,196 @@
+/* Definir la paleta de colores */
+:root {
+    --color-primary: #0F4C81;
+    /* Azul oscuro */
+    --color-secondary: #00A19D;
+    /* Verde azulado */
+    --color-tertiary: #74D4E0;
+    /* Azul claro */
+    --color-quaternary: #2f2f2f;
+    /* Gris claro */
+    --color-quinary: #FFFFFF;
+    /* Blanco */
+}
+
+/* Aplicar los colores a los elementos */
+* {
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Añadir esta propiedad */
+}
+
+nav {
+    display: flex;
+    background-color: var(--color-primary);
+    /* Usar el color primario para el fondo del nav */
+    margin: 0 0 12px 0;
+    flex-wrap: wrap; /* Añadir esta propiedad */
+    justify-content: space-between; /* Añadir esta propiedad */
+    align-items: center; /* Añadir esta propiedad */
+}
+
+nav a {
+    color: var(--color-quinary);
+    /* Usar el color quinario para el texto del nav */
+    font-size: 18px;
+    padding: 14px 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    /* Añadir una transición al color de fondo del nav */
+}
+
+nav a:hover {
+    background-color: var(--color-secondary);
+    /* Usar el color secundario para el efecto hover del nav */
+}
+
+.nav-selected {
+    background-color: var(--color-tertiary);
+    /* Usar el color terciario para el elemento seleccionado del nav */
+}
+
+.ml-description {
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.index_img {
+    height: 200px;
+    padding-right: 12px;
+}
+
+.big_index_img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-max-width {
+    max-width: 100%;
+    height: auto;
+}
+
+.index_img:hover {
+    transform: scale(1.1);
+    /* Añadir un efecto de zoom a la imagen al pasar el cursor */
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    padding: 12px;
+    color: var(--color-primary);
+    /* Usar el color primario para el texto de los encabezados */
+    animation: slide-in 1s;
+    /* Añadir una animación de deslizamiento a los encabezados */
+}
+
+h2 {
+    padding: 12px;
+    color: var(--color-primary);
+    animation: slide-in 1s;
+}
+
+h3 {
+    padding: 12px;
+    color: var(--color-primary);
+    animation: slide-in 1s;
+}
+
+
+p {
+    padding: 12px;
+    color: var(--color-quaternary);
+    /* Usar el color cuaternario para el texto de los párrafos */
+}
+
+ol {
+    padding-left: 36px;
+}
+
+ol li {
+    font-weight: bold;
+}
+
+ol li p {
+    font-weight: 400;
+}
+
+ul {
+    padding-left: 36px;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+ul li p {
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--color-quinary);
+    /* Usar el color quinario para el fondo del body */
+}
+
+.grid-container {
+    display: grid;
+    /* Una columna */
+    grid-template-rows: auto 1fr auto;
+    /* Tres filas */
+    grid-template-areas:
+        /* Asignar nombres a las áreas de la rejilla */
+        "header"
+        "main"
+        "footer";
+    grid-gap: 12px; /* Añadir esta propiedad */
+}
+
+header {
+    grid-area: header;
+    /* Asignar el área de la rejilla al header */
+}
+
+main {
+    grid-area: main; /* Añadir esta propiedad */
+}
+
+footer {
+    grid-area: footer;
+    /* Asignar el área de la rejilla al footer */
+    background-color: var(--color-primary);
+    /* Usar el color primario para el fondo del footer */
+    color: var(--color-quinary);
+    /* Usar el color quinario para el texto del footer */
+    padding: 10px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+footer p {
+    /* Usar el color primario para el fondo del footer */
+    color: var(--color-quinary);
+}
+
+/* Definir la animación de deslizamiento */
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.biography-cite{
+    font-weight: 400;
+}
