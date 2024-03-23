@@ -17,21 +17,24 @@
 <body>
     <!-- Usar la etiqueta <section> para agrupar secciones de contenido relacionado -->
     <section class="grid-container">
-        <h1>
-            Historia
-        </h1>
         <!-- Usar la etiqueta <article> para marcar el contenido que se puede distribuir de forma independiente -->
         <article class="grid-item">
             <header class="grid-item">
+                <label for="nav-toggle" class="nav-icon">☰</label>
+                <!-- Agregar un checkbox que controlará la visibilidad del menú -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
                 <nav>
-                    <a href="./index.html">Introducción</a>
-                    <a href="./location.html">Ubicación</a>
-                    <a href="./characters.html">Personajes</a>
-                    <a href="./activities.html">Actividades</a>
-                    <a href="./history.html" class="nav-selected">Historia</a>
-                    <a href="./biography.html">Biografía</a>
+                    <!-- Encerrar los enlaces en un div para controlar su visibilidad -->
+                    <div class="nav-menu">
+                        <a href="./index.html">Introducción</a>
+                        <a href="./location.html">Ubicación</a>
+                        <a href="./characters.html">Personajes</a>
+                        <a href="./activities.html">Actividades</a>
+                        <a href="./history.html" class="nav-selected">Historia</a>
+                        <a href="./biography.html">Biografía</a>
                 </nav>
             </header>
+            <h1>Historia</h1>
             <main class="grid-item">
                 <p>
                     El machine learning tiene sus orígenes en el deseo y el esfuerzo de los humanos por estudiar los
@@ -57,7 +60,7 @@
                 </p>
             </main>
             <footer class="grid-item">
-                <p>© 2024 by Sebastian Garzon.</p>
+                <p>© 2024 by Sebastian Garzón.</p>
             </footer>
         </article>
     </section>

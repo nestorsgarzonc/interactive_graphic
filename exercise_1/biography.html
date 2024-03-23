@@ -9,7 +9,7 @@
         content="Página web sobre la biografía del autor y las fuentes de información sobre el machine learning y la inteligencia artificial generativa">
     <!-- Añadir palabras clave relacionadas con el tema de la página -->
     <meta name="keywords"
-        content="machine learning, inteligencia artificial, generativa, biografía, bibliografía, Sebastian Garzon">
+        content="machine learning, inteligencia artificial, generativa, biografía, bibliografía, Sebastian Garzón">
     <link rel="stylesheet" href="styles.css">
     <title>Machine learning</title>
 </head>
@@ -17,28 +17,31 @@
 <body>
     <!-- Usar la etiqueta <section> para agrupar secciones de contenido relacionado -->
     <section class="grid-container">
-        <h1>
-            Biografía
-        </h1>
         <!-- Usar la etiqueta <article> para marcar el contenido que se puede distribuir de forma independiente -->
         <article class="grid-item">
             <header class="grid-item">
+                <label for="nav-toggle" class="nav-icon">☰</label>
+                <!-- Agregar un checkbox que controlará la visibilidad del menú -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
                 <nav>
-                    <a href="./index.html">Introducción</a>
-                    <a href="./location.html">Ubicación</a>
-                    <a href="./characters.html">Personajes</a>
-                    <a href="./activities.html">Actividades</a>
-                    <a href="./history.html">Historia</a>
-                    <a href="./biography.html" class="nav-selected">Biografía</a>
+                    <!-- Encerrar los enlaces en un div para controlar su visibilidad -->
+                    <div class="nav-menu">
+                        <a href="./index.html">Introducción</a>
+                        <a href="./location.html">Ubicación</a>
+                        <a href="./characters.html">Personajes</a>
+                        <a href="./activities.html">Actividades</a>
+                        <a href="./history.html">Historia</a>
+                        <a href="./biography.html" class="nav-selected">Biografía</a>
                 </nav>
             </header>
+            <h1>Biografía</h1>
             <main class="grid-item">
                 <p>
-                    Sebastian Garzon es un estudiante de ingeniería informática y apasionado por el machine learning y
+                    Sebastian Garzón es un estudiante de ingeniería informática y apasionado por el machine learning y
                     la inteligencia artificial generativa.
                 </p>
                 <h3>
-                    Información extraída de:
+                    Información e imágenes extraídas de:
                 </h3>
                 <ol>
                     <li class="biography-cite">
@@ -138,7 +141,7 @@
                 </ol>
             </main>
             <footer class="grid-item">
-                <p>© 2024 by Sebastian Garzon.</p>
+                <p>© 2024 by Sebastian Garzón.</p>
             </footer>
         </article>
     </section>

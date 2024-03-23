@@ -15,19 +15,26 @@
 /* Aplicar los colores a los elementos */
 * {
     font-family: sans-serif, Arial, Helvetica;
+    box-sizing: border-box; 
+}
+
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Añadir esta propiedad */
+}
+
+#header-grid-item {
+    background-color: var(--color-primary);
 }
 
 nav {
-    display: flex;
     background-color: var(--color-primary);
+    display: flex;
     /* Usar el color primario para el fondo del nav */
     margin: 0 0 12px 0;
-    flex-wrap: wrap; /* Añadir esta propiedad */
-    justify-content: space-between; /* Añadir esta propiedad */
-    align-items: center; /* Añadir esta propiedad */
+    padding: 0 24px;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 nav a {
@@ -58,7 +65,7 @@ nav a:hover {
 }
 
 .index_img {
-    height: 200px;
+    height: 300px;
     padding-right: 12px;
 }
 
@@ -149,7 +156,7 @@ body {
         "header"
         "main"
         "footer";
-    grid-gap: 12px; /* Añadir esta propiedad */
+    grid-gap: 12px; 
 }
 
 header {
@@ -158,7 +165,7 @@ header {
 }
 
 main {
-    grid-area: main; /* Añadir esta propiedad */
+    grid-area: main; 
 }
 
 footer {
@@ -194,3 +201,80 @@ footer p {
 .biography-cite{
     font-weight: 400;
 }
+
+.nav-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative; /* Posicionamiento relativo para el label */
+    z-index: 2; /* Asegurar que el ícono esté sobre el checkbox */
+}
+
+/* Ocultar visualmente el checkbox pero mantenerlo funcional */
+.nav-toggle {
+    appearance: none;
+    position: absolute;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 1; /* Posicionar el checkbox debajo del ícono */
+}
+
+/* Estilos para el menú desplegable */
+.nav-toggle:checked + nav .nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-icon {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+
+    .ml-description {
+        display: block;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .nav-menu {
+        display: flex;
+    }
+
+    .nav-burger {
+        display: none;
+    }
+
+    .ml-description {
+        display: block;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav-menu {
+        display: flex;
+    }
+    .nav-burger {
+        display: none;
+    }
+}  

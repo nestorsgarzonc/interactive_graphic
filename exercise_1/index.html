@@ -4,34 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Añadir una descripción de la página -->
     <meta name="description" content="Página web sobre machine learning e inteligencia artificial generativa">
-
-    <!-- Añadir palabras clave relacionadas con el tema de la página -->
     <meta name="keywords" content="machine learning, inteligencia artificial, generativa, transformers, GAN">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Machine learning</title>
 </head>
 
 <body>
-    <!-- Usar la etiqueta <section> para agrupar secciones de contenido relacionado -->
     <section class="grid-container">
-        <h1>
-            ¿Qué es machine learning?
-        </h1>
-        <!-- Usar la etiqueta <article> para marcar el contenido que se puede distribuir de forma independiente -->
         <article class="grid-item">
-            <header class="grid-item">
+            <header class="grid-item" id="header-grid-item">
+                <!-- Agregar un label que funcionará como botón del menú hamburguesa -->
+                <label for="nav-toggle" class="nav-icon">☰</label>
+                <!-- Agregar un checkbox que controlará la visibilidad del menú -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
                 <nav>
-                    <a href="./index.html" class="nav-selected">Introducción</a>
-                    <a href="./location.html">Ubicación</a>
-                    <a href="./characters.html">Personajes</a>
-                    <a href="./activities.html">Actividades</a>
-                    <a href="./history.html">Historia</a>
-                    <a href="./biography.html">Biografía</a>
+                    <!-- Encerrar los enlaces en un div para controlar su visibilidad -->
+                    <div class="nav-menu">
+                        <a href="./index.html" class="nav-selected">Introducción</a>
+                        <a href="./location.html">Ubicación</a>
+                        <a href="./characters.html">Personajes</a>
+                        <a href="./activities.html">Actividades</a>
+                        <a href="./history.html">Historia</a>
+                        <a href="./biography.html">Biografía</a>
+                    </div>
                 </nav>
             </header>
+            <h1>¿Qué es machine learning?</h1>
             <main class="grid-item">
                 <div class="ml-description">
                     <!-- Usar la etiqueta <alt> para añadir un texto alternativo a las imágenes -->
@@ -78,7 +78,7 @@
                 </p>
             </main>
             <footer class="grid-item">
-                <p>© 2024 by Sebastian Garzon.</p>
+                <p>© 2024 by Sebastian Garzón.</p>
             </footer>
         </article>
     </section>
