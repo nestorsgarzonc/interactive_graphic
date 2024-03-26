@@ -69,6 +69,13 @@ nav a:hover {
     padding-right: 12px;
 }
 
+.characters_img {
+    height: 100px;
+    width: 100px;
+    margin-right: 48px;
+    margin-bottom: 12px;
+}
+
 .big_index_img {
     width: 70%;
     display: block;
@@ -250,6 +257,13 @@ footer p {
     h3{
         font-size: 18px;
     }
+
+     .characters_img {
+        height: 300px;
+        width: 300px;
+        margin-right: 48px;
+        margin-bottom: 12px;
+    }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
@@ -276,5 +290,12 @@ footer p {
     }
     .nav-burger {
         display: none;
+    }
+
+    .characters_img {
+        height: 150px;
+        width: 150px;
+        margin-right: 48px;
+        margin-bottom: 12px;
     }
 }  
