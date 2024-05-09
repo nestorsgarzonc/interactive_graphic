@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web sobre machine learning e inteligencia artificial generativa">
+    <meta name="keywords" content="machine learning, inteligencia artificial, generativa, transformers, GAN">
+    <link href="https://cdn.jsdelivr.net/npm/interactiveimagejs@2.7.1/dist/interactive-image.min.css" rel="stylesheet">
+    <!-- Incluye jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Incluye Interactive Image JS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/interactiveimagejs@2.7.1/dist/interactive-image.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace al archivo JS personalizado para el mapa interactivo -->
+    <script src="interactive_map.js"></script>
+    <title>Mapa interactivo</title>
+</head>
+
+<body>
+    <section class="grid-container">
+        <article class="grid-item">
+            <header class="grid-item" id="header-grid-item">
+                <!-- Agregar un label que funcionará como botón del menú hamburguesa -->
+                <label for="nav-toggle" class="nav-icon">☰</label>
+                <!-- Agregar un checkbox que controlará la visibilidad del menú -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <nav>
+                    <!-- Encerrar los enlaces en un div para controlar su visibilidad -->
+                    <div class="nav-menu">
+                        <a href="./index.html">Introducción</a>
+                        <a href="./location.html">Ubicación</a>
+                        <a href="./characters.html">Personajes</a>
+                        <a href="./activities.html">Actividades</a>
+                        <a href="./history.html">Historia</a>
+                        <a href="./biography.html">Creditos</a>
+                        <a href="./interactive_map.html" class="nav-selected">Mapa interactivo</a>
+                    </div>
+                </nav>
+            </header>
+            <h1 id="interactive-map-title">Mapa interactivo</h1>
+            <main class="grid-item">
+                <div id="my-interactive-image"></div> <!-- Contenedor para la imagen interactiva -->
+            </main>
+            <footer class="grid-item" id="interactive-map-footer">
+                <p>© 2024 by Sebastian Garzón.</p>
+            </footer>
+        </article>
+    </section>
+
+</body>
+
+</html>

@@ -299,3 +299,52 @@ footer p {
         margin-bottom: 12px;
     }
 }  
+
+/* CSS relacionado con el mapa interactivo */
+
+/* Estilo para el título del mapa interactivo */
+#interactive-map-title {
+    padding-bottom: 60px; /* Espacio debajo del título */
+}
+
+/* Estilo para el pie de página del mapa interactivo */
+#interactive-map-footer {
+    margin-top: 100px; /* Espacio encima del pie de página */
+}
+
+/* Estilo para la imagen interactiva en general */
+.interactive-image {
+  margin: auto; /* Centra la imagen interactiva horizontalmente */
+  width: 900px; /* Ancho fijo de la imagen interactiva */
+  height: 380px; /* Altura fija de la imagen interactiva */
+  transform: scale(1.3); /* Escala la imagen a un 130% de su tamaño original */
+  background-color: rgb(81, 180, 255); /* Color de fondo de la imagen interactiva */
+  background-image: url('./assets/world.svg'); /* Imagen de fondo para la imagen interactiva */
+  background-size: contain; /* Asegura que la imagen de fondo se ajuste completamente dentro del contenedor */
+}
+
+/* Sobrescribe el estilo predeterminado de los puntos interactivos (hotspots) */
+.interactive-image .hotspot {
+  color: var(--color-primary); /* Cambia el color del texto de los hotspots a azul */
+}
+
+/* Sobrescribe el estilo predeterminado de las imágenes dentro de los elementos del mapa interactivo */
+.interactive-map-item img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
+    height: auto; /* La altura de la imagen se ajusta automáticamente para mantener la proporción */
+}
+
+
+@media only screen and (max-width: 1200px) {
+ .interactive-image {
+  transform: scale(1.7); /* Escala la imagen a un 160% de su tamaño original */
+}
+#interactive-map-title {
+    padding-bottom: 120px; /* Espacio debajo del título */
+}
+
+/* Estilo para el pie de página del mapa interactivo */
+#interactive-map-footer {
+    margin-top: 130px; /* Espacio encima del pie de página */
+}
+}  
